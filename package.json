@@ -5,7 +5,9 @@
   "version": "0.1.1",
   "author": "Morten Rand-Hendriksen, based on work by Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@react-three/drei": "^7.8.5",
     "@wordpress/block-library": "^2.29.3",
+    "daisyui": "^1.14.0",
     "gatsby": "^2.32.13",
     "gatsby-awesome-pagination": "^0.3.8",
     "gatsby-image": "^2.11.0",
@@ -19,11 +21,16 @@
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-three-fiber": "^6.0.13",
+    "three": "^0.132.2",
+    "zustand": "^3.5.10"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.4",
     "gatsby-plugin-postcss": "^4.14.0",
+    "gatsby-plugin-sass": "^4.14.0",
+    "node-sass": "^6.0.1",
     "postcss": "^8.3.6",
     "prettier": "2.1.2",
     "tailwindcss": "^2.2.15"

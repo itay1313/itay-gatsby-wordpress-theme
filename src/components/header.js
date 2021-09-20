@@ -31,6 +31,7 @@ const Header = ({ siteTitle, siteDescription, siteURL }) => (
       </h1>
       <p>{siteDescription}</p>
       <p>url is: {siteURL}</p>
+      <button className="btn btn-primary">DaisyUI Button</button>
     </div>
     <MainNav />
   </header>

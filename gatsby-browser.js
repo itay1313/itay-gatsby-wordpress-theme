@@ -1,4 +1,4 @@
-import "./src/components/global.css"
+import "./src/styles/global.scss"
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
