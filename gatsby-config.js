@@ -17,7 +17,13 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-dark-mode`,
+    {
+      resolve: "gatsby-plugin-theme-switcher",
+      options: {
+        defaultDarkTheme: "theme-twitter",
+        defaultLightTheme: "theme-midnightgreen",
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

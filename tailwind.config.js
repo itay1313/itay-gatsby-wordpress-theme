@@ -1,6 +1,6 @@
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode: "class",
+  darkMode: "media",
   theme: {
     fontFamily: {
       roboto: ["Roboto", "Helvetica"],
@@ -74,8 +74,6 @@ module.exports = {
       //     error: "#ff5724",
       //   },
       // },
-      "forest",
-      "synthwave",
     ],
   },
 }
