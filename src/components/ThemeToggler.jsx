@@ -1,26 +1,22 @@
 import React from "react"
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
-export default function ThemeToggleSelect() {
+export default function ThemeToggle() {
   return (
-    <select class="select" data-choose-theme>
-      <option value="">Change Theme</option>
-      <option value="dark">dark</option>
-      <option value="light">light</option>
-      <option value="black">black</option>
-      <option value="cyberpunk">cyberpunk</option>
-      <option value="dracula">dracula</option>
-      <option value="valentine">valentine</option>
-      <option value="retro">retro</option>
-      <option value="synthwave">synthwave</option>
-      <option value="garden">garden</option>
-      <option value="halloween">halloween</option>
-      <option value="aqua">aqua</option>
-      <option value="cupcake">cupcake</option>
-      <option value="bumblebee">bumblebee</option>
-      <option value="pastel">pastel</option>
-      <option value="forest">forest</option>
-      <option value="fantasy">fantasy</option>
-      <option value="luxury">luxury</option>
-    </select>
+    <ThemeToggler>
+      {({ theme, toggleTheme }) => {
+        if (theme == null) return null
+        return (
+          <label>
+            <input
+              className="toggle toggle-accent"
+              type="checkbox"
+              onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
+              checked={theme === "dark"}
+            />
+          </label>
+        )
+      }}
+    </ThemeToggler>
   )
 }

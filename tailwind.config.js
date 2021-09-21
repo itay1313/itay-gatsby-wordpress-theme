@@ -74,6 +74,8 @@ module.exports = {
       //     error: "#ff5724",
       //   },
       // },
+      "forest",
+      "synthwave",
     ],
   },
 }
