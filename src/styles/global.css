@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 :root {
   --primary-color: #ff008c;
   --secondary-color: blue;
@@ -51,7 +51,7 @@ body.light {
 
   background-color: var(--bg);
   color: var(--textNormal);
-}
+} */
 
 .theme-christmas {
   --color-bg-primary: #165b33;

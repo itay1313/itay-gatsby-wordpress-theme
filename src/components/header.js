@@ -33,8 +33,8 @@ const Header = ({ siteTitle, siteDescription, siteURL }) => {
         <div className="flex-1 px-2 mx-2">
           <MainNav />
         </div>
-        <div className="flex-none">
-          <div style={{}}>
+        <div className="flex-none relative">
+          <div style={{ position: "absolute", top: 0, right: 40 }}>
             <ThemeSwitcher theme={theme} setTheme={switchTheme} />
           </div>
           <button className="btn btn-square btn-ghost">
