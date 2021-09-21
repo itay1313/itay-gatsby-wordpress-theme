@@ -92,64 +92,10 @@ module.exports = {
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
-      {
-        lpthemedark: {
-          primary: "#ff6900",
-          "primary-focus": "#db5a00",
-          "primary-content": "#ffffff",
-
-          secondary: "#005ef4",
-          "secondary-focus": "#0040d6",
-          "secondary-content": "#ffffff",
-
-          accent: "#4667c8",
-          "accent-focus": "#3955a7",
-          "accent-content": "#ffffff",
-
-          neutral: "#ffffff",
-          "neutral-focus": "#ebecef",
-          "neutral-content": "#2a2b2e",
-
-          "base-100": "#ffffff",
-          "base-200": "#f7f7f9",
-          "base-300": "#6f737c",
-          "base-content": "#2a2b2e",
-
-          info: "#4667c8",
-          success: "#a0ca00",
-          warning: "#ff6900",
-          error: "#d72329",
-        },
-
-        // active
-        lptheme: {
-          primary: "#ff6900",
-          "primary-focus": "#db5a00",
-          "primary-content": "#ffffff",
-
-          secondary: "#005ef4",
-          "secondary-focus": "#0040d6",
-          "secondary-content": "#ffffff",
-
-          accent: "#4667c8",
-          "accent-focus": "#3955a7",
-          "accent-content": "#ffffff",
-
-          neutral: "#ffffff",
-          "neutral-focus": "#ebecef",
-          "neutral-content": "#2a2b2e",
-
-          "base-100": "#ffffff",
-          "base-200": "#f7f7f9",
-          "base-300": "#6f737c",
-          "base-content": "#2a2b2e",
-
-          info: "#4667c8",
-          success: "#a0ca00",
-          warning: "#ff6900",
-          error: "#d72329",
-        },
-      },
+      "luxury", // first one will be the default theme
+      "dark",
+      "forest",
+      "synthwave",
     ],
   },
 }
