@@ -3,16 +3,23 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import MainNav from "./mainNav"
+import ThemeToggleSelect from "./ThemeToggler"
 
 const Header = ({ siteTitle, siteDescription, siteURL }) => (
-  <header style={{}}>
-    <div className="navbar shadow-lg bg-neutral text-neutral-content">
+  <header
+    style={{
+      position: "sticky",
+      top: "9",
+      zIndex: "99",
+    }}
+  >
+    <div className="navbar shadow-lg bg-neutral text-neutral-content dark:text-blue-navy dark:bg-neutral-content">
       <div className="flex-none px-2 mx-2">
         <h1 style={{ margin: 0 }}>
           <Link
+            className="dark:bg-neutral-content"
             to="/"
             style={{
-              color: `white`,
               textDecoration: `none`,
             }}
           >
@@ -24,6 +31,7 @@ const Header = ({ siteTitle, siteDescription, siteURL }) => (
         <MainNav />
       </div>
       <div className="flex-none">
+        <ThemeToggleSelect />
         <button className="btn btn-square btn-ghost">
           <svg
             xmlns="http://www.w3.org/2000/svg"

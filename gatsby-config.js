@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-dark-mode`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

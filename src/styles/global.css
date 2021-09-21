@@ -1,3 +1,81 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-default: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-default: #252b30;
+  }
+}
+[data-theme="dark"] {
+  --color-default: #252b30;
+}
+[data-theme="black"] {
+  --color-default: #000000;
+}
+[data-theme="🌸"] {
+  --color-default: #ffabc8;
+}
+[data-theme="🐬"] {
+  --color-default: #7ec6ff;
+}
+[data-theme="🐤"] {
+  --color-default: #ffd65a;
+}
+body {
+  background-color: var(--color-default);
+}
+
+:root {
+  --primary-color: #ff008c;
+  --secondary-color: blue;
+  --text-blue-navy: #ff008c;
+  --primary: #570df8;
+  --primary-focus: #4506cb;
+  --primary-content: #ffffff;
+  --secondary: #f000b8;
+  --secondary-focus: #bd0091;
+  --secondary-content: #ffffff;
+  --accent: #37cdbe;
+  --accent-focus: #2aa79b;
+  --accent-content: #ffffff;
+  --neutral: #3d4451;
+  --neutral-focus: #2a2e37;
+  --neutral-content: #ffffff;
+  --base-100: #ffffff;
+  --base-200: #f9fafb;
+  --base-300: #d1d5db;
+  --base-content: #1f2937;
+  --info: #2094f3;
+  --success: #009485;
+  --warning: #ff9900;
+  --error: #ff5724;
+}
+
+body.dark {
+  --bg: var(--primary-color);
+  --bg-hero: var(--dark-blue);
+  --textNormal: rgba(255, 255, 255, 0.88);
+  --textTitle: white;
+  --textLink: var(--orange);
+  --hr: hsla(0, 0%, 100%, 0.2);
+  --box-shadow: #5b628e26;
+
+  background-color: var(--bg);
+  color: var(--textNormal);
+}
+body.light {
+  --bg: white;
+  --bg-hero: #f7f7f7;
+  --textNormal: #000;
+  --textTitle: #090c43;
+  --textLink: var(--light-blue);
+  --hr: hsla(0, 0%, 0%, 0.2);
+  --box-shadow: #565a7126;
+
+  background-color: var(--bg);
+  color: var(--textNormal);
+}
