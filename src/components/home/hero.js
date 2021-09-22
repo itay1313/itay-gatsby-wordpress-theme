@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 // import { Link } from "gatsby"
 import Parallax from "parallax-js"
-import emojiTheme from "./emojiTheme"
+import EmojiTheme from "./emojiTheme"
 
 const Hero = () => {
   // Parallax actives
