@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: "gatsby-plugin-theme-switcher",
       options: {

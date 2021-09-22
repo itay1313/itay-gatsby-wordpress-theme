@@ -40,7 +40,7 @@ const ThemePicker = ({ theme, setTheme }) => {
           return item.id === theme ? (
             <div key={item.id} className={item.id}>
               <button
-                style={{ backgroundColor: "var(--color-bg-primary)" }}
+                style={{ backgroundColor: "var(--color-bg-accent)" }}
                 className="btn btn-primary"
                 aria-label={`Theme ${item.name}`}
                 onClick={() => setTheme(nextTheme)}

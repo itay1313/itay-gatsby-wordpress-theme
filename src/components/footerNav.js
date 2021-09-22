@@ -47,13 +47,13 @@ const FooterNav = () => {
     }
   `)
 
-  console.log("Raw data:", wpMenu.allWpMenuItem.nodes)
+  // console.log("Raw data:", wpMenu.allWpMenuItem.nodes)
   const footerMenu = FlatListToHierarchical(wpMenu.allWpMenuItem.nodes, {
     idKey: "id",
     childrenKey: "routes",
     parentKey: "parent",
   })
-  console.log("footerMenu: ", footerMenu)
+  // console.log("footerMenu: ", footerMenu)
 
   return (
     <nav style={{ textAlign: "left" }}>

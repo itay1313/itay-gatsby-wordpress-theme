@@ -52,13 +52,13 @@ const MainNav = () => {
     }
   `)
 
-  console.log("Raw data:", wpMenu.allWpMenuItem.nodes)
+  // console.log("Raw data:", wpMenu.allWpMenuItem.nodes)
   const headerMenu = FlatListToHierarchical(wpMenu.allWpMenuItem.nodes, {
     idKey: "id",
     childrenKey: "routes",
     parentKey: "parent",
   })
-  console.log("headerMenu: ", headerMenu)
+  // console.log("headerMenu: ", headerMenu)
 
   return (
     <nav className={style.mainnav}>

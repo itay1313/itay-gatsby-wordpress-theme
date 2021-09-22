@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react"
+import Image from "../image"
 // import { Link } from "gatsby"
 import Parallax from "parallax-js"
-import emojiTheme from "./emojiTheme"
 
-const Hero = () => {
+const AboutMe = () => {
   // Parallax actives
   const sceneEl = useRef(null)
   useEffect(() => {
@@ -17,25 +17,20 @@ const Hero = () => {
   return (
     <div className="hero min-h-screen">
       <div className="flex-col hero-content lg:flex-row-reverse">
-        <div ref={sceneEl}>
-          <img
-            data-depth="0.30"
-            src="https://picsum.photos/id/1005/600/600"
-            className="max-w-sm rounded-lg shadow-2xl"
-          />
-        </div>
         <div>
           <h1 className="mb-5 text-5xl font-bold">
-            Hello <EmojiTheme />
-            <br></br>
+            Hello <br></br>
             I'm Itay Haephrati
           </h1>
           <p className="mb-5">I design and build things for the web.</p>
           <button className="btn btn-primary">Get Started</button>
+        </div>
+        <div ref={sceneEl}>
+          <Image />
         </div>
       </div>
     </div>
   )
 }
 
-export default Hero
+export default AboutMe

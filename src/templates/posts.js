@@ -13,7 +13,15 @@ const ArticleIndex = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title="Articles" />
-      <section className={style.articlelist}>
+      <section
+        style={{
+          maxWidth: `80rem`,
+          padding: "1rem",
+          gap: "1rem",
+          margin: "0 auto",
+        }}
+        className={style.articlelist}
+      >
         <h1>Posts</h1>
         {posts.map((post, index) => (
           <article key={index} className={style.listitem}>
