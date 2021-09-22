@@ -11,7 +11,7 @@ import style from "./mainNav.module.css"
 
 const MenuLoop = ({ menuItems }) => {
   return (
-    <ul className="menu items-stretch px-3 shadow-lg horizontal rounded-none gap-2">
+    <ul className="menu items-stretch px-3 horizontal rounded-none gap-2">
       {menuItems.map((menuItem, index) => {
         return (
           <li
@@ -62,7 +62,7 @@ const MainNav = () => {
   // console.log("headerMenu: ", headerMenu)
 
   return (
-    <nav className={style.mainnav + " py-4 artboard artboard-demo"}>
+    <nav className={style.mainnav}>
       {headerMenu.length > 0 && <MenuLoop menuItems={headerMenu}></MenuLoop>}
     </nav>
   )

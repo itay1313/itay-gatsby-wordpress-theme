@@ -28,11 +28,11 @@
 .theme-spacegray {
   --primary: #4dff4d;
   --primary-focus: #36b336;
-  --primary-content: #4dffff;
-  --secondary: #92fdfd;
+  --primary-content: #000;
+  --secondary: #81b336;
   --secondary-focus: #22ffff;
   --secondary-content: #000;
-  --accent: #81b336;
+  --accent: #92fdfd;
   --accent-focus: #2aa79b;
   --accent-content: #ffffff;
   --neutral: #3d4451;
