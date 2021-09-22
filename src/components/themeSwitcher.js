@@ -2,28 +2,20 @@ import React from "react"
 
 const myThemes = [
   {
-    id: "theme-midnightgreen",
-    name: "Midnight Green",
+    id: "theme-daisy",
+    name: "daisy",
   },
   {
-    id: "theme-spacegray",
-    name: "Space Gray",
+    id: "theme-seatheme",
+    name: "seatheme",
   },
   {
-    id: "theme-twitter",
-    name: "Twitter Dark",
+    id: "theme-greeny",
+    name: "greeny",
   },
   {
-    id: "theme-reddead",
-    name: "Red Dead",
-  },
-  {
-    id: "theme-fallguys",
-    name: "Fall Guys",
-  },
-  {
-    id: "theme-christmas",
-    name: "Christmas",
+    id: "theme-pinky",
+    name: "pinky",
   },
 ]
 
