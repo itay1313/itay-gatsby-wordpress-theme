@@ -12,12 +12,13 @@ const Header = ({ siteTitle, siteDescription, siteURL }) => {
     <header
       style={{
         position: "sticky",
-        top: "9",
+        top: "0",
         zIndex: "99",
+        backgroundColor: "var(--primary)",
       }}
     >
-      <div className="navbar shadow-lg">
-        <div className="flex-none px-2 mx-2">
+      <div className="navbar flex justify-between px-2 mx-2 shadow-lg">
+        <div>
           <h1 style={{ margin: 0 }}>
             <Link
               className=""
@@ -30,11 +31,16 @@ const Header = ({ siteTitle, siteDescription, siteURL }) => {
             </Link>
           </h1>
         </div>
-        <div className="flex-1 px-2 mx-2">
+        <div className="flex-1 px-2 mx-2 sm:hidden">
           <MainNav />
         </div>
-        <div className="flex-none relative">
-          <div style={{ position: "absolute", right: 0, whiteSpace: "nowrap" }}>
+        <div className="relative">
+          <div
+            style={{
+              right: 0,
+              whiteSpace: "nowrap",
+            }}
+          >
             <ThemeSwitcher theme={theme} setTheme={switchTheme} />
           </div>
           {/* <button className="btn btn-square btn-ghost">

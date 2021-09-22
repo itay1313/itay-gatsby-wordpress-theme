@@ -23,7 +23,7 @@ const Hero = () => {
             data-depth="0.20"
             src={imageMe}
             alt="imageme"
-            className="max-w-sm rounded-lg shadow-2xl"
+            className="lg:max-w-sm rounded-lg shadow-2xl"
           />
         </div>
         <div>

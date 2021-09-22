@@ -19,13 +19,15 @@
   list-style-type: none;
 }
 
-.mainnav a {
+.mainnav a,
+.menu[class*="p-"] li a {
   padding: 0.3rem 1rem;
   display: block;
-  border: 1px solid hsla(0, 0%, 100%, 0);
+  border-bottom: 1px solid var(--secondary-content);
+  border-radius: 0 !important;
 }
 
 .mainnav a:hover,
 .mainnav a:focus {
-  border-color: hsla(0, 0%, 100%, 1);
+  border-color: var(--secondary-focus);
 }

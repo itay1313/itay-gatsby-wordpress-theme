@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-theme-switcher",
       options: {
-        defaultDarkTheme: "theme-aqua",
-        defaultLightTheme: "theme-dracula",
+        defaultDarkTheme: "theme-purple",
+        defaultLightTheme: "theme-pinky",
       },
     },
     {

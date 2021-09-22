@@ -6,8 +6,8 @@ const myThemes = [
     name: "daisy",
   },
   {
-    id: "theme-seatheme",
-    name: "seatheme",
+    id: "theme-aqua",
+    name: "aqua",
   },
   {
     id: "theme-greeny",
@@ -16,6 +16,14 @@ const myThemes = [
   {
     id: "theme-pinky",
     name: "pinky",
+  },
+  {
+    id: "theme-purple",
+    name: "purple",
+  },
+  {
+    id: "theme-spacegray",
+    name: "spacegray",
   },
 ]
 
@@ -32,7 +40,10 @@ const ThemePicker = ({ theme, setTheme }) => {
           return item.id === theme ? (
             <div key={item.id} className={item.id}>
               <button
-                style={{ backgroundColor: "var(--color-bg-accent)" }}
+                style={{
+                  backgroundColor: "var(--primary-focus)",
+                  color: "var(--primary-content)",
+                }}
                 className="btn btn-primary"
                 aria-label={`Theme ${item.name}`}
                 onClick={() => setTheme(nextTheme)}

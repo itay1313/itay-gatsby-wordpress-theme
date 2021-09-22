@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
-  background-color: rebeccapurple;
+  background-color: var(--secondary-content);
   padding: 2rem;
   text-align: center;
-  color: white;
+  color: var(--primary);
 }
 
 .footer a {
-  color: white;
+  color: var(--primary-focus);
 }

@@ -11,10 +11,11 @@ import style from "./mainNav.module.css"
 
 const MenuLoop = ({ menuItems }) => {
   return (
-    <ul>
+    <ul className="menu items-stretch px-3 shadow-lg horizontal rounded-none gap-2">
       {menuItems.map((menuItem, index) => {
         return (
           <li
+            style={{ marginBottom: 0 }}
             key={index}
             className={menuItem.routes.length > 0 ? "has-submenu" : undefined}
           >
@@ -61,7 +62,7 @@ const MainNav = () => {
   // console.log("headerMenu: ", headerMenu)
 
   return (
-    <nav className={style.mainnav}>
+    <nav className={style.mainnav + " py-4 artboard artboard-demo"}>
       {headerMenu.length > 0 && <MenuLoop menuItems={headerMenu}></MenuLoop>}
     </nav>
   )
