@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react"
 import Image from "../image"
 // import { Link } from "gatsby"
 import Parallax from "parallax-js"
+import imageMe from "../../images/sm.jpeg"
 
 const AboutMe = () => {
   // Parallax actives
@@ -26,7 +27,12 @@ const AboutMe = () => {
           <button className="btn btn-primary">Get Started</button>
         </div>
         <div ref={sceneEl}>
-          <Image />
+          <img
+            data-depth="0.10"
+            src={imageMe}
+            alt="imageme"
+            className="max-w-sm rounded-lg shadow-2xl"
+          />
         </div>
       </div>
     </div>

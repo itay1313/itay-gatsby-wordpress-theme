@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react"
 // import { Link } from "gatsby"
 import Parallax from "parallax-js"
 import EmojiTheme from "./emojiTheme"
+import imageMe from "../../images/sm.jpeg"
 
 const Hero = () => {
   // Parallax actives
@@ -19,8 +20,9 @@ const Hero = () => {
       <div className="flex-col hero-content lg:flex-row-reverse">
         <div ref={sceneEl}>
           <img
-            data-depth="0.30"
-            src="https://picsum.photos/id/1005/600/600"
+            data-depth="0.20"
+            src={imageMe}
+            alt="imageme"
             className="max-w-sm rounded-lg shadow-2xl"
           />
         </div>
