@@ -8,7 +8,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: `http://webkid.store/graphql`,
+        url: process.env.WPGRAPHQL_URL || `http://webkid.store/graphql`,
         develop: {
           hardCacheMediaFiles: true,
         },
