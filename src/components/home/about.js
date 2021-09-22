@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react"
-import Image from "../image"
-// import { Link } from "gatsby"
+
 import Parallax from "parallax-js"
 import imageMe from "../../images/sm.jpeg"
 
