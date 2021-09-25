@@ -9,6 +9,9 @@ import Catlist from "../components/catlist"
 import PostNav from "../components/postNav"
 
 export default ({ data }) => {
+  // console.log("itay")
+  // console.log(data)
+  // const elementorData = JSON.parse(data.pathContext.elementorData)
   const post = data.thePost
   return (
     <Layout>
@@ -56,7 +59,7 @@ export const query = graphql`
     thePost: wpPost(databaseId: { eq: $databaseId }) {
       date
       databaseId
-      content
+      elementorData
       title
       author {
         node {

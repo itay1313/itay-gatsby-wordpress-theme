@@ -27,7 +27,7 @@ const ArticleIndex = ({ data, pageContext }) => {
           <article key={index} className={style.listitem}>
             {post.featuredImage && (
               <figure className={style.featimg}>
-                <Link to={post.uri}>
+                <Link to={`/posts${post.uri}`}>
                   <Img
                     fluid={
                       post.featuredImage.node.localFile.childImageSharp.fluid

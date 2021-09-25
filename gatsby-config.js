@@ -14,6 +14,16 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "wordPress",
+        fieldName: "wordPress",
+        // Url to query from
+        url: "http://webkid.store/graphql",
+        referenceInterval: 60,
+      },
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
