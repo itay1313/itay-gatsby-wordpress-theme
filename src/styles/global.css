@@ -94,7 +94,7 @@
   --error: #ff5724;
 }
 
-.theme-greeny {
+.theme-fallguys {
   --primary: #c1f20f;
   --primary-focus: #c0f500;
   --primary-content: #0b30fb;
@@ -103,11 +103,11 @@
   --secondary-content: #252626;
   --accent: #0726d4;
   --accent-focus: #0726d49a;
-  --accent-content: #ffffff;
+  --accent-content: #d1e4dd;
   --neutral: #3d4451;
   --neutral-focus: #2a2e37;
-  --neutral-content: #ffffff;
-  --base-100: #ffffff;
+  --neutral-content: #d1e4dd;
+  --base-100: #d1e4dd;
   --base-200: #f9fafb;
   --base-300: #d1d5db;
   --base-content: #1f2937;
