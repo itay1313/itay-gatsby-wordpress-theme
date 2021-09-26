@@ -3,7 +3,7 @@ module.exports = {
   darkMode: "media",
   theme: {
     fontFamily: {
-      roboto: ["Roboto", "Helvetica"],
+      sans: ["Montserrat", "Helvetica"],
       "roboto-mono": ["Roboto Mono", "monospace"],
       "roboto-slab": ["Roboto Slab", "serif"],
     },
@@ -67,13 +67,30 @@ module.exports = {
         13: "3.25rem",
         14: "3.5rem",
         15: "3.75rem",
+        28: "7rem",
+        80: "20rem",
+        96: "24rem",
+      },
+      height: {
+        "1/2": "50%",
+      },
+      scale: {
+        30: ".3",
+      },
+      boxShadow: {
+        outline: "0 0 0 3px rgba(101, 31, 255, 0.4)",
       },
       borderRadius: {
         "1rem": "1rem",
       },
     },
   },
-  variants: {},
+  variants: {
+    scale: ["responsive", "hover", "focus", "group-hover"],
+    textColor: ["responsive", "hover", "focus", "group-hover"],
+    opacity: ["responsive", "hover", "focus", "group-hover"],
+    backgroundColor: ["responsive", "hover", "focus", "group-hover"],
+  },
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
