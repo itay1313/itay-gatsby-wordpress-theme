@@ -47,7 +47,7 @@ const Hero = () => {
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start w-full">
                   <div className="rounded-md shadow">
                     <a
-                      className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2"
+                      className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-secondary-content bg-secondary hover:bg-secondary-focus px-4 py-2"
                       href="/started"
                     >
                       Get started

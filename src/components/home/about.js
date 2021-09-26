@@ -64,7 +64,7 @@ const AboutMe = () => {
                 <h6 className="mb-2 font-semibold leading-5">
                   The quick, brown fox jumps over a lazy dog
                 </h6>
-                <p className="text-sm text-gray-900">
+                <p className="text-sm text-secondary-content">
                   With over
                   <span className="text-gray-700 font-bold">
                     {" "}
@@ -94,7 +94,7 @@ const AboutMe = () => {
               <h6 className="mb-2 font-semibold leading-5">
                 A flower in my garden, a mystery
               </h6>
-              <p className="text-sm text-gray-900">
+              <p className="text-sm text-secondary-content">
                 They urge you to put down your sword and come join the winners.
               </p>
             </div>
@@ -117,7 +117,7 @@ const AboutMe = () => {
               <h6 className="mb-2 font-semibold leading-5">
                 Skate ipsum dolor sit amet, alley oop
               </h6>
-              <p className="text-sm text-gray-900">
+              <p className="text-sm text-secondary-content">
                 If one examines precultural libertarianism, one is faced with a
                 choice: either accept rationalism.
               </p>
@@ -141,7 +141,7 @@ const AboutMe = () => {
               <h6 className="mb-2 font-semibold leading-5">
                 The first mate and his Skipper too will
               </h6>
-              <p className="text-sm text-gray-900">
+              <p className="text-sm text-secondary-content">
                 Those options are already baked in with this model shoot me an
                 email clear blue water.
               </p>
