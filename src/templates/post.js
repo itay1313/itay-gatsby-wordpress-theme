@@ -2,16 +2,22 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
+// css for Elementor
+import "../components/Elementor/elementorStyle.css"
+
 import style from "./single.module.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Catlist from "../components/catlist"
 import PostNav from "../components/postNav"
+import ChildRenderer from "../components/Elementor/ChildRenderer"
 
 export default ({ data }) => {
-  // console.log("itay")
-  // console.log(data)
-  // const elementorData = JSON.parse(data.pathContext.elementorData)
+  console.log("itay")
+  console.log(data)
+  const elementorData = JSON.parse(data.thePost.elementorData)
+
+  console.log({ elementorData })
   const post = data.thePost
   return (
     <Layout>
@@ -39,6 +45,7 @@ export default ({ data }) => {
           className={style.article__content}
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+        <ChildRenderer elements={elementorData} />
         <div>
           Tagged:{" "}
           {post.tags.nodes.map((tag, index) => [
