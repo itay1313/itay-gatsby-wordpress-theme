@@ -59,6 +59,8 @@ module.exports = {
         success: "var(--success)",
         warning: "var(--warning)",
         error: "var(--error)",
+        white: "var(--base-100)",
+        black: "var(--base-100)",
       },
       spacing: {
         7: "1.75rem",
