@@ -65,8 +65,13 @@ const AboutMe = () => {
                   The quick, brown fox jumps over a lazy dog
                 </h6>
                 <p className="text-sm text-gray-900">
-                  Baseball ipsum dolor sit amet cellar rubber win hack tossed.
-                  Slugging catcher slide bench league.
+                  With over
+                  <span className="text-gray-700 font-bold">
+                    {" "}
+                    10+ Years of experience{" "}
+                  </span>
+                  Web Engineer at @LivePerson | Founder of http://com-mando.com
+                  | Father of 3 | #Gatsby, #Wordpress, #SCSS, #JS, #headlesscms.
                 </p>
               </div>
             </div>

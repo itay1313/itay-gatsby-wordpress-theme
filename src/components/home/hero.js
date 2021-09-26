@@ -16,9 +16,9 @@ const Hero = () => {
   // }, [])
 
   return (
-    <div className="relative bg-white overflow-hidden h-screen">
+    <div className="relative bg-primary overflow-hidden h-screen">
       <div className="max-w-7xl mx-auto h-full">
-        <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20  lg:w-full lg:pb-28 xl:pb-32 h-full">
+        <div className="relative z-10 pb-8  sm:pb-16 md:pb-20  lg:w-full lg:pb-28 xl:pb-32 h-full">
           {/* <div ref={sceneEl} className="flex justify-start items-center gap-12">
             <a className="flex items-center" href="/">
               <img
@@ -33,8 +33,8 @@ const Hero = () => {
           <main className="mt-10 mx-auto px-4 sm:px-6   lg:px-8 h-full">
             <div className="flex flex-col md:flex-row w-full items-start justify-between md:justify-start h-full">
               <div className="text-left z-20 md:z-30 w-full md:w-1/2 flex flex-col items-center md:items-start justify-start md:justify-center h-full">
-                <h1 className="tracking-tight font-extrabold text-gray-900 titleHome text-6xl ">
-                  <span className="flex w-full m-auto text-primary gap-4">
+                <h1 className="tracking-tight font-extrabold text-secondary-content titleHome text-6xl ">
+                  <span className="flex w-full m-auto text-secondary gap-4">
                     Hello <EmojiTheme />
                   </span>
                   <span className="block font-bold xl:inline">
@@ -43,15 +43,7 @@ const Hero = () => {
                     Nice to meet me
                   </span>
                 </h1>
-                <h2 className="mt-3  text-gray-500 sm:mt-5 text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  With over
-                  <span className="text-gray-700 font-bold">
-                    {" "}
-                    10+ Years of experience{" "}
-                  </span>
-                  Web Engineer at @LivePerson | Founder of http://com-mando.com
-                  | Father of 3 | #Gatsby, #Wordpress, #SCSS, #JS, #headlesscms.
-                </h2>
+
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start w-full">
                   <div className="rounded-md shadow">
                     <a
