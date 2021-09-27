@@ -1,6 +1,6 @@
-import React from "react"
+import * as React from "react"
 import { toPascalCase } from "../../utils/ucwordfirst"
-// import * as components from "./index"
+import * as components from "./index"
 
 import Section from "./Section"
 import Column from "./Column"

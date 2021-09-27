@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
-// import FooterNav from "./footerNav"
-// import style from "./footer.module.css"
+import FooterNav from "./footerNav"
+import style from "./footer.module.css"
 
 const Footer = () => {
   return (
