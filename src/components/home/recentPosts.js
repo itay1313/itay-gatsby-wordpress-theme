@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from "react"
+import React from "react"
+import { graphql, Link } from "gatsby"
 
-const RecentPosts = () => {
+const RecentPosts = data => {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <h2>Recent Posts</h2>
@@ -8,27 +9,27 @@ const RecentPosts = () => {
         <div className="grid py-8 sm:grid-cols-4">
           <div className="mb-4 sm:mb-0">
             <div className="space-y-1 text-xs font-semibold tracking-wide uppercase">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
                 aria-label="Category"
               >
                 Books
-              </a>
+              </Link>
               <p className="text-gray-600">5 Jan 2020</p>
             </div>
           </div>
           <div className="sm:col-span-3 lg:col-span-2">
             <div className="mb-3">
-              <a
-                href="/"
+              <Link
+                to="/"
                 aria-label="Article"
                 className="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
               >
                 <p className="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl">
                   Tell them I hate them
                 </p>
-              </a>
+              </Link>
             </div>
             <p className="text-gray-700">
               Well, the way they make shows is, they make one show. That show's
@@ -40,27 +41,27 @@ const RecentPosts = () => {
         <div className="grid py-8 sm:grid-cols-4">
           <div className="mb-4 sm:mb-0">
             <div className="space-y-1 text-xs font-semibold tracking-wide uppercase">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
                 aria-label="Category"
               >
                 Inspiration
-              </a>
+              </Link>
               <p className="text-gray-600">15 Sep 2020</p>
             </div>
           </div>
           <div className="sm:col-span-3 lg:col-span-2">
             <div className="mb-3">
-              <a
-                href="/"
+              <Link
+                to="/"
                 aria-label="Article"
                 className="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
               >
                 <p className="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl">
                   A flower in my green garden
                 </p>
-              </a>
+              </Link>
             </div>
             <p className="text-gray-700">
               Chase ball of string eat plants, meow, and throw up because I ate
@@ -71,27 +72,27 @@ const RecentPosts = () => {
         <div className="grid py-8 sm:grid-cols-4">
           <div className="mb-4 sm:mb-0">
             <div className="space-y-1 text-xs font-semibold tracking-wide uppercase">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
                 aria-label="Category"
               >
                 Detective
-              </a>
+              </Link>
               <p className="text-gray-600">28 Dec 2020</p>
             </div>
           </div>
           <div className="sm:col-span-3 lg:col-span-2">
             <div className="mb-3">
-              <a
-                href="/"
+              <Link
+                to="/"
                 aria-label="Article"
                 className="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
               >
                 <p className="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl">
                   We never had the love we deserve
                 </p>
-              </a>
+              </Link>
             </div>
             <p className="text-gray-700">
               Sportacus andrew weatherall goose Refined gentlemen super mario
@@ -101,8 +102,8 @@ const RecentPosts = () => {
         </div>
       </div>
       <div className="text-center">
-        <a
-          href="/"
+        <Link
+          to="/"
           aria-label=""
           className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
         >
@@ -114,7 +115,7 @@ const RecentPosts = () => {
           >
             <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
           </svg>
-        </a>
+        </Link>
       </div>
     </div>
   )

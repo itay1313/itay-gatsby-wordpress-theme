@@ -1,18 +1,18 @@
 import React, { useEffect, useRef } from "react"
 
-// import Parallax from "parallax-js"
+import Parallax from "parallax-js"
 // import imageMe from "../../images/sm.jpeg"
 
 const AboutMe = () => {
   // Parallax actives
-  // const sceneEl = useRef(null)
-  // useEffect(() => {
-  //   const parallaxInstance = new Parallax(sceneEl.current, {
-  //     relativeInput: true,
-  //   })
-  //   parallaxInstance.enable()
-  //   return () => parallaxInstance.disable()
-  // }, [])
+  const sceneEl = useRef(null)
+  useEffect(() => {
+    const parallaxInstance = new Parallax(sceneEl.current, {
+      relativeInput: true,
+    })
+    parallaxInstance.enable()
+    return () => parallaxInstance.disable()
+  }, [])
 
   return (
     <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -22,8 +22,9 @@ const AboutMe = () => {
       <div className="relative">
         <div className="grid gap-12 row-gap-8 lg:grid-cols-2">
           <div className="grid gap-12 row-gap-5 md:grid-cols-2">
-            <div className="relative">
+            <div ref={sceneEl} className="relative">
               <svg
+                data-depth="0.20"
                 viewBox="0 0 52 24"
                 fill="currentColor"
                 className="absolute top-0 left-0 z-0 w-32 -mt-8 -ml-16 text-blue-gray-100 lg:w-32 lg:-mt-12"

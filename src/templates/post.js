@@ -13,8 +13,8 @@ import PostNav from "../components/postNav"
 import ChildRenderer from "../components/Elementor/ChildRenderer"
 
 export default ({ data }) => {
-  // console.log("itay")
-  // console.log(data)
+  console.log("itay")
+  console.log(data)
   const elementorData = JSON.parse(data.thePost.elementorData)
 
   // console.log({ elementorData })

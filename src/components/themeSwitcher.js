@@ -48,10 +48,12 @@ const ThemePicker = ({ theme, setTheme }) => {
                 aria-label={`Theme ${item.name}`}
                 onClick={() => setTheme(nextTheme)}
               >
-                <span class="inline-flex bg-pink-600 text-white rounded-full h-6 px-3 justify-center items-center">
+                <span className="inline-flex bg-pink-600 text-white rounded-full h-6 px-3 justify-center items-center">
                   {item.name}
                 </span>
-                <span class="inline-flex px-2 text-pink-600">Change theme</span>
+                <span className="inline-flex px-2 text-pink-600">
+                  Change theme
+                </span>
               </button>
             </div>
           ) : null

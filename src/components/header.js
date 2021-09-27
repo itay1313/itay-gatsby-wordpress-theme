@@ -21,14 +21,7 @@ const Header = ({ siteTitle, siteDescription, siteURL }) => {
       <div className="navbar flex justify-between px-2 mx-2 shadow-lg">
         <div>
           <h1 style={{ margin: 0 }}>
-            <Link
-              to="/"
-              style={{
-                textDecoration: `none`,
-              }}
-            >
-              {siteTitle}
-            </Link>
+            <Link to={siteURL}>{siteTitle}</Link>
           </h1>
         </div>
         <div className="flex-1 px-2 mx-2 sm:hidden">

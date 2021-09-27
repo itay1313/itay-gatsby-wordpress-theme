@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from "react"
-// import { Link } from "gatsby"
-import Parallax from "parallax-js"
+import React from "react"
+import { Link } from "gatsby"
+// import Parallax from "parallax-js"
 import EmojiTheme from "./emojiTheme"
 import imageMe from "../../images/sm.jpeg"
 
@@ -19,17 +19,6 @@ const Hero = () => {
     <div className="relative bg-primary overflow-hidden h-screen">
       <div className="max-w-7xl mx-auto h-full">
         <div className="relative z-10 pb-8  sm:pb-16 md:pb-20  lg:w-full lg:pb-28 xl:pb-32 h-full">
-          {/* <div ref={sceneEl} className="flex justify-start items-center gap-12">
-            <a className="flex items-center" href="/">
-              <img
-                data-depth="0.20"
-                className="h-12 w-auto sm:h-12"
-                src={imageMe}
-                alt="imageme"
-                alt="site"
-              />
-            </a>
-          </div> */}
           <main className="mt-10 mx-auto px-4 sm:px-6   lg:px-8 h-full">
             <div className="flex flex-col md:flex-row w-full items-start justify-between md:justify-start h-full">
               <div className="text-left z-20 md:z-30 w-full md:w-1/2 flex flex-col items-center md:items-start justify-start md:justify-center h-full">
@@ -46,15 +35,15 @@ const Hero = () => {
 
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start w-full">
                   <div className="rounded-md shadow">
-                    <a
+                    <Link
                       className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-secondary-content bg-secondary hover:bg-secondary-focus px-4 py-2"
                       href="/started"
                     >
                       Get started
-                    </a>
+                    </Link>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <a
+                    <Link
                       target="_blank"
                       rel="noreferrer"
                       href={imageMe}
@@ -71,7 +60,7 @@ const Hero = () => {
                         <path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"></path>
                       </svg>
                       <span className="ml-2">Contact me</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="mt-4">
@@ -95,7 +84,7 @@ const Hero = () => {
                           <button
                             aria-label="Go to article"
                             type="button"
-                            className="absolute rounded-full bg-indigo-500 text-white w-12 h-12 right-8 -top-6"
+                            className="absolute rounded-full bg-secondary-focus text-secondary w-12 h-12 right-8 -top-6"
                           >
                             <svg
                               width="20"
@@ -307,12 +296,12 @@ const Hero = () => {
                             </svg>
                             <div>
                               All illimited link
-                              <a
-                                href="#"
+                              <Link
+                                to="/"
                                 className="text-red-500 font-semibold"
                               >
                                 free plan
-                              </a>
+                              </Link>
                             </div>
                           </li>
                           <li className="mb-3 flex items-center space-x-2">
@@ -366,13 +355,13 @@ const Hero = () => {
                           className="rounded-t-lg h-28 w-full mb-4"
                         />
                         <div className="flex flex-col items-center justify-center p-4 -mt-16">
-                          <a href="#" className="block relative">
+                          <Link to="/" className="block relative">
                             <img
                               alt="profil"
                               src={imageMe}
                               className="mx-auto rounded-full h-16 w-16 "
                             />
-                          </a>
+                          </Link>
                           <p className="text-gray-800 dark:text-white text-xl font-medium mt-2">
                             Itay
                           </p>
@@ -485,9 +474,9 @@ const Hero = () => {
                                 aria-hidden="true"
                               >
                                 <path
-                                  fill-rule="evenodd"
+                                  fillRule="evenodd"
                                   d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                                  clip-rule="evenodd"
+                                  clipRule="evenodd"
                                 ></path>
                               </svg>
                             </span>
@@ -602,7 +591,7 @@ const Hero = () => {
                             >
                               <path d="M1277 1122q0-26-19-45l-181-181 181-181q19-19 19-45 0-27-19-46l-90-90q-19-19-46-19-26 0-45 19l-181 181-181-181q-19-19-45-19-27 0-46 19l-90 90q-19 19-19 46 0 26 19 45l181 181-181 181q-19 19-19 45 0 27 19 46l90 90q19 19 46 19 26 0 45-19l181-181 181 181q19 19 45 19 27 0 46-19l90-90q19-19 19-46zm387-226q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
                             </svg>
-                            My wife
+                            Skydiving
                           </li>
                         </ul>
                         <button
@@ -616,7 +605,7 @@ const Hero = () => {
                   </div>
                   <div className="col-1">
                     <div className="mb-4">
-                      <div className="shadow-lg rounded-2xl w-64 bg-indigo-500 dark:bg-gray-800 p-4">
+                      <div className="shadow-lg rounded-2xl w-64 bg-secondary-focus dark:bg-gray-800 p-4">
                         <div className="flex text-white  items-center justify-between">
                           <p className="text-4xl font-medium mb-4">Pro</p>
                           <p className="text-3xl font-bold flex flex-col">
@@ -767,13 +756,13 @@ const Hero = () => {
                     <div className="mb-4">
                       <div className="w-full mx-auto max-w-xl rounded-lg bg-white dark:bg-gray-800 shadow-lg px-5 py-4 text-gray-800 dark:text-gray-50">
                         <div className="w-full pt-1 text-center -mt-16 mx-auto">
-                          <a href="#" className="block relative">
+                          <Link to="/" className="block relative">
                             <img
                               alt="profil"
                               src={imageMe}
                               className="mx-auto rounded-full h-20 w-20 "
                             />
-                          </a>
+                          </Link>
                         </div>
                         <div className="w-full">
                           <div className="text-center mb-6">
@@ -818,23 +807,19 @@ const Hero = () => {
                     <div className="mb-4">
                       <div className="w-72 bg-white rounded-lg shadow-md p-6">
                         <div className="w-16 mx-auto relative -mt-10 mb-3">
-                          <img
-                            className="-mt-1"
-                            src="/icons/cookie.svg"
-                            alt="cookie"
-                          />
+                          <img className="-mt-1" src={imageMe} alt="cookie" />
                         </div>
                         <span className="w-full sm:w-48  block leading-normal text-gray-800 text-md mb-3">
                           We care about your data, and we&#x27;d love to use
                           cookies to make your experience better.
                         </span>
                         <div className="flex items-center justify-between">
-                          <a
+                          <Link
                             className="text-xs text-gray-400 mr-1 hover:text-gray-800"
-                            href="#"
+                            to="/"
                           >
                             Privacy Policy
-                          </a>
+                          </Link>
                           <div className="w-1/2">
                             <button
                               type="button"
@@ -847,7 +832,7 @@ const Hero = () => {
                       </div>
                     </div>
                     <div className="mb-4">
-                      <div className="shadow-lg rounded-2xl w-64 bg-indigo-500 dark:bg-gray-800 p-4">
+                      <div className="shadow-lg rounded-2xl w-64 bg-secondary-focus dark:bg-gray-800 p-4">
                         <div className="flex text-white  items-center justify-between">
                           <p className="text-4xl font-medium mb-4">Pro</p>
                           <p className="text-3xl font-bold flex flex-col">
