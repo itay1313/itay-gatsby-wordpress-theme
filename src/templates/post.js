@@ -50,7 +50,12 @@ export default ({ data }) => {
           Tagged:{" "}
           {post.tags.nodes.map((tag, index) => [
             index > 0 && ", ",
-            <Link key={index} to={tag.link}>
+            <Link
+              className="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              aria-label="Tag"
+              key={index}
+              to={tag.link}
+            >
               {tag.name}
             </Link>,
           ])}

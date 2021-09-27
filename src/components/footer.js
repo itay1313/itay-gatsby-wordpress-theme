@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 const Footer = () => {
   return (
     <div className="relative mt-16 bg-deep-purple-accent-400">
-      <svg
+      {/* <svg
         className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-deep-purple-accent-400"
         preserveAspectRatio="none"
         viewBox="0 0 1440 54"
@@ -16,14 +16,14 @@ const Footer = () => {
           fill="currentColor"
           d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"
         />
-      </svg>
+      </svg> */}
       <div className="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
           <div className="md:max-w-md lg:col-span-2">
             <Link
               to="/"
               aria-label="Go home"
-              title="Company"
+              title="ItayCode"
               className="inline-flex items-center"
             >
               <svg
@@ -42,7 +42,7 @@ const Footer = () => {
                 <rect x="14" y="11" width="7" height="12" />
               </svg>
               <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-                Company
+                ItayCode
               </span>
             </Link>
             <div className="mt-4 lg:max-w-sm">
@@ -233,7 +233,9 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row">
           <p className="text-sm text-gray-100">
-            © Copyright 2020 Lorem Inc. All rights reserved.
+            © Copyright 2021 Itay Haephrati |{" "}
+            <a href="https://com-mando.com">com-mando.com</a>. All rights
+            reserved.
           </p>
           <div className="flex items-center mt-4 space-x-4 sm:mt-0">
             <Link

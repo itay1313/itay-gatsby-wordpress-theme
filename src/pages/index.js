@@ -17,8 +17,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <Hero />
-      <AboutMe />
-      <Pricing />
+
       <div className="recentposts px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <h2>Recent Posts</h2>
         <div className="mb-10 border-t border-b divide-y">
@@ -54,7 +53,7 @@ const IndexPage = ({ data }) => {
         </div>
         <div className="text-center">
           <Link
-            to="/"
+            to="/posts"
             aria-label=""
             className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
           >
@@ -69,6 +68,8 @@ const IndexPage = ({ data }) => {
           </Link>
         </div>
       </div>
+      <AboutMe />
+
       {/* <Link to="/page-2/">Go to page 2</Link> <br />
       <Link to="/posts/">Go to Posts</Link> */}
     </Layout>
@@ -79,7 +80,7 @@ export default IndexPage
 
 export const query = graphql`
   {
-    allWpPost {
+    allWpPost(limit: 3) {
       nodes {
         date
         databaseId

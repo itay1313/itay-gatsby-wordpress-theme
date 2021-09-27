@@ -23,47 +23,64 @@ const ArticleIndex = ({ data, pageContext }) => {
         className={style.articlelist}
       >
         <h1>Posts</h1>
-        {posts.map((post, index) => (
-          <article key={index} className={style.listitem}>
-            {post.featuredImage && (
-              <figure className={style.featimg}>
-                <Link to={`/posts${post.uri}`}>
-                  <Img
-                    fluid={
-                      post.featuredImage.node.localFile.childImageSharp.fluid
-                    }
-                    alt={post.featuredImage.node.altText}
-                  />
-                </Link>
-              </figure>
-            )}
-            <Catlist postObject={post} />
-            <h2 className={style.article__title}>
-              <Link to={`/posts${post.uri}`}>{post.title}</Link>
-            </h2>
-            <div className={style.article__meta}>
-              by {post.author.node.name}. Published{" "}
-              {new Date(post.date).toLocaleDateString("en-US", {
-                month: "long",
-                day: "numeric",
-                year: "numeric",
-              })}{" "}
-            </div>
-            <div
-              className={style.article__content}
-              dangerouslySetInnerHTML={{ __html: post.excerpt }}
-            />
-            <div className={style.article__tax}>
-              Tagged:{" "}
-              {post.tags.nodes.map((tag, index) => [
-                index > 0 && ", ",
-                <Link key={index} to={tag.link}>
-                  {tag.name}
-                </Link>,
-              ])}
-            </div>
-          </article>
-        ))}
+        <div
+          style={{
+            padding: 0,
+            listStyle: "none",
+            display: "grid",
+            justifyItems: "center",
+            gap: "1.5rem",
+            gridTemplateColumns: "repeat(auto-fit, minmax(25ch, 1fr))",
+            //       padding: 0px;
+            // list-style: none;
+            // display: grid;
+            // justify-items: center;
+            // grid-gap: var(--size-600);
+            // grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
+          }}
+        >
+          {posts.map((post, index) => (
+            <article key={index} className={style.listitem}>
+              {/* {post.featuredImage && (
+                <figure className={style.featimg}>
+                  <Link to={`/posts${post.uri}`}>
+                    <Img
+                      fluid={
+                        post.featuredImage.node.localFile.childImageSharp.fluid
+                      }
+                      alt={post.featuredImage.node.altText}
+                    />
+                  </Link>
+                </figure>
+              )} */}
+              <Catlist postObject={post} />
+              <h2 className={style.article__title}>
+                <Link to={`/posts${post.uri}`}>{post.title}</Link>
+              </h2>
+              <div className={style.article__meta}>
+                by {post.author.node.name}. Published{" "}
+                {new Date(post.date).toLocaleDateString("en-US", {
+                  month: "long",
+                  day: "numeric",
+                  year: "numeric",
+                })}{" "}
+              </div>
+              <div
+                className={style.article__content}
+                dangerouslySetInnerHTML={{ __html: post.excerpt }}
+              />
+              <div className={style.article__tax}>
+                Tagged:{" "}
+                {post.tags.nodes.map((tag, index) => [
+                  index > 0 && ", ",
+                  <Link key={index} to={tag.link}>
+                    {tag.name}
+                  </Link>,
+                ])}
+              </div>
+            </article>
+          ))}
+        </div>
       </section>
       <Pagination pageContext={pageContext} />
     </Layout>
