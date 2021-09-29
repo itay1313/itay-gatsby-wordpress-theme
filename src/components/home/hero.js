@@ -24,7 +24,7 @@ const Hero = () => {
               <div className="text-left z-20 md:z-30 w-full md:w-1/2 flex flex-col items-center md:items-start justify-start md:justify-center h-full">
                 <h1 className="tracking-tight font-extrabold text-secondary-content titleHome text-6xl ">
                   <span className="flex w-full m-auto text-secondary gap-4">
-                    Hello <EmojiTheme />
+                    WIP <EmojiTheme />
                   </span>
                   <span className="block font-bold xl:inline">
                     I'm Itay Haephrati
