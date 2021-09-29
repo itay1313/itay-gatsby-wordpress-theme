@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
-  background-color: var(--secondary-content);
+  background-color: var(--footer-background);
   padding: 2rem;
   text-align: center;
-  color: var(--primary);
+  color: var(--footer-text);
 }
 
 .footer a {
