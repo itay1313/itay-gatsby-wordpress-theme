@@ -9,9 +9,9 @@
   --secondary: #651fff;
   --secondary-focus: #a255ff;
   --secondary-content: #0100ca;
-  --link-color: #64379f;
-  --link-color-focus: #64379fc5;
-  --link-color-content: #ffffff;
+  --accent: #64379f;
+  --accent-focus: #64379fc5;
+  --accent-content: #ffffff;
   --neutral: #3d4451;
   --neutral-focus: #2a2e37;
   --neutral-content: #ffffff;
@@ -36,9 +36,9 @@
   --secondary: #81b336;
   --secondary-focus: #22ffff;
   --secondary-content: #000;
-  --link-color: #92fdfd;
-  --link-color-focus: #2aa79b;
-  --link-color-content: #ffffff;
+  --accent: #92fdfd;
+  --accent-focus: #2aa79b;
+  --accent-content: #ffffff;
   --neutral: #3d4451;
   --neutral-focus: #2a2e37;
   --neutral-content: #ffffff;
@@ -63,9 +63,9 @@
   --secondary: #92fdfd;
   --secondary-focus: #22ffff;
   --secondary-content: #1b1464;
-  --link-color: #37cdbe;
-  --link-color-focus: #2aa79b;
-  --link-color-content: #ffffff;
+  --accent: #37cdbe;
+  --accent-focus: #2aa79b;
+  --accent-content: #ffffff;
   --neutral: #3d4451;
   --neutral-focus: #2a2e37;
   --neutral-content: #ffffff;
@@ -90,9 +90,9 @@
   --secondary: #f000b8;
   --secondary-focus: #bd0091;
   --secondary-content: #ffffff;
-  --link-color: #37cdbe;
-  --link-color-focus: #2aa79b;
-  --link-color-content: #ffffff;
+  --accent: #37cdbe;
+  --accent-focus: #2aa79b;
+  --accent-content: #ffffff;
   --neutral: #3d4451;
   --neutral-focus: #2a2e37;
   --neutral-content: #ffffff;
@@ -117,9 +117,9 @@
   --secondary: #ff00a1;
   --secondary-focus: #df048e;
   --secondary-content: #252626;
-  --link-color: #0726d4;
-  --link-color-focus: #0726d49a;
-  --link-color-content: #d1e4dd;
+  --accent: #0726d4;
+  --accent-focus: #0726d49a;
+  --accent-content: #d1e4dd;
   --neutral: #3d4451;
   --neutral-focus: #2a2e37;
   --neutral-content: #d1e4dd;
@@ -144,9 +144,9 @@
   --secondary: #f44b37;
   --secondary-focus: #f32d17;
   --secondary-content: #ffffff;
-  --link-color: #bfe6d4;
-  --link-color-focus: #a1e7c6;
-  --link-color-content: #ffffff;
+  --accent: #bfe6d4;
+  --accent-focus: #a1e7c6;
+  --accent-content: #ffffff;
   --neutral: #3d4451;
   --secondary-focus: #2a2e37;
   --secondary-content: #ffffff;
@@ -224,5 +224,5 @@
   --secondary-content: #4f5969;
   --color-heading: #1a202c;
   --color-heading-black: black;
-  --link-color: #d1dce5;
+  --accent: #d1dce5;
 }
